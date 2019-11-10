@@ -241,14 +241,14 @@ Beberapa command yang sering digunakan pada iptables :
 
 | Command and Syntax                                        | Description                                                                             | Example                                         |
 | --------------------------------------------------------- |:--------------------------------------------------------------------------------------- |:----------------------------------------------- |
-| `-A, --append chain rule-specification`                   | menambahkan rules pada chain  | `$ iptables -A INPUT -s 10.151.36.0/24 -j DROP` 
+| `-A, --append chain rule-specification`                   | menambahkan rules pada chain  | `# iptables -A INPUT -s 10.151.36.0/24 -j DROP` 
 | `-C, --check chain rule-specification`                    | mengecek rule apa saja yang berlaku pada chain    | `iptables -C INPUT -s 10.151.36.0/24 -j DROP`
-| `-D, --delete chain {rule-specification \ rulenum}`      | menghapus rules pada chain    | `$ iptables -D INPUT -s 10.151.36.0/24 -j DROP`
-| `-I, --insert chain [rulenum] rule-specification`         | menyisipkan rules pada urutan tertentu    | `$ iptables -I OUTPUT 2 -s 10.151.36.0/24 -j DROP`
-| `-R, --replace chain rulenum rule-specification`          | mengganti rules pada chain tertentu   | `$ iptables -R OUTPUT 2 -s 10.151.36.0/24 -j DROP`
-| `-L, --list [chain]`                                      | melihat daftar rules yang berlaku berdasarkan chain   | `$ iptables -L INPUT`
-| `-S, --list-rules [chain]`                                | melihat semua rules yang berlaku pada firewall   | `$ iptables -S INPUT`, `iptables -n -L -v --line-numbers`
-| `-F, --flush [chain]`                                     | menghilangkan semua rules pada chain tertentu (semua chain jika chain tidak disebutkan) | `$ iptables -F INPUT`
+| `-D, --delete chain {rule-specification \ rulenum}`      | menghapus rules pada chain    | `# iptables -D INPUT -s 10.151.36.0/24 -j DROP`
+| `-I, --insert chain [rulenum] rule-specification`         | menyisipkan rules pada urutan tertentu    | `# iptables -I OUTPUT 2 -s 10.151.36.0/24 -j DROP`
+| `-R, --replace chain rulenum rule-specification`          | mengganti rules pada chain tertentu   | `# iptables -R OUTPUT 2 -s 10.151.36.0/24 -j DROP`
+| `-L, --list [chain]`                                      | melihat daftar rules yang berlaku berdasarkan chain   | `# iptables -L INPUT`
+| `-S, --list-rules [chain]`                                | melihat semua rules yang berlaku pada firewall   | `# iptables -S INPUT`, `iptables -n -L -v --line-numbers`
+| `-F, --flush [chain]`                                     | menghilangkan semua rules pada chain tertentu (semua chain jika chain tidak disebutkan) | `# iptables -F INPUT`
 
 **Penjelasan :**
 
