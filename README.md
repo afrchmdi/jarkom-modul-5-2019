@@ -12,7 +12,7 @@
 ### 1. Definisi
 Firewall adalah sebuah sistem keamanan pada jaringan komputer yang digunakan untuk melindungi suatu komputer dari beberapa jenis serangan dari komputer luar berdasarkan aturan keamanan (_security rules_) yang telah ditentukan. 
 
-Menurut Wikipedia Firewall adalah tembok api, tembok pelindung, atau dinding api yang merupakan suatu sistem yang dirancang untuk mencegah akses yang tidak di inginkan dari atau kedalam suatu jaringan internal.
+Menurut Wikipedia, Firewall adalah tembok api, tembok pelindung, atau dinding api yang merupakan suatu sistem yang dirancang untuk mencegah akses yang tidak diinginkan dari atau kedalam suatu jaringan internal.
 
 ### 2. Fungsi Firewall
 Firewall diperlukan karena keamanan, diantara pertimbangan adanya firewall adalah:
@@ -42,7 +42,7 @@ Firewall mempunyai beberapa tipe untuk melindungi jaringan, antara lain :
 
 1. __Packet-Filtering Firewall__ 
 
-    __Packet-filtering Firewall__ adalah tipe firewall yang memeriksa dan membandingkan alamat sumber dari paket lewat dengan aturan atau kebijakan yang telah terdaftar pada filtering firewall. Pada firewall tipe ini akan diatur apakah paket data tersebut akan diperbolehkan lewat atau menolaknya. Firewall ini bekerja pada network layer OSI. 
+    __Packet-filtering Firewall__ adalah tipe firewall yang memeriksa dan membandingkan alamat sumber dari paket lewat dengan aturan atau kebijakan yang telah terdaftar pada filtering firewall. Pada firewall tipe ini akan diatur apakah paket data tersebut akan diperbolehkan lewat atau menolaknya. Pada OSI layer, firewall ini bekerja pada network layer. 
 
     Pada Linux, packet filtering firewall ditanamkan pada kernel (sebagai modul kernel, atau digabungkan ke dalam kernel) dan dapat diatur menggunakan IPTables yang merupakan paket aplikasi built-in pada Linux. Aturan atau kebijakan pemeriksaan paket data berdasarkan informasi yang dapat ditangkap dari packet header, antara lain :
 
@@ -349,3 +349,10 @@ Penjelasan :
 ```
 
 # Soal Latihan
+
+![Topologi Latihan](img/latihan.JPG)
+
+1. Komputer di subnet CUBONE tidak diizinkan mengakses server ARTICUNO
+2. Komputer di subnet SNORLAX tidak dapat diakses pada pukul 08.00 - 20.00
+3. Server MEWTWO tidak diperbolehkan menerima koneksi SSH
+4. Semua paket yang menuju subnet SWABLU akan diarahkan ke PIPLUP
