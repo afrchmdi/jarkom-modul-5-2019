@@ -215,7 +215,7 @@ Hal-hal yang perlu diingat untuk memberlakukan rules pada IPTables, yaitu :
 - Jika kriteria sudah sesuai, firewall akan mengeksekusi rule pada target atau suatu nilai (parameter) yang disebutkan pada target.
 - Jika kriteria tidak sesuai, firewall akan mengeksekusi rule yang selanjutnya.
 
-Tujuan paket yang dapat di definisikan pada target, beberapa target yang sering digunakan adalah :
+Tujuan paket dapat di definisikan pada target, beberapa target yang sering digunakan adalah :
 
 1. __ACCEPT__ – Firewall akan mengizinkan paket data.
 2. __DROP__ – Firewall akan menolak paket data.
