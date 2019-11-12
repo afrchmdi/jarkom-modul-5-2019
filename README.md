@@ -265,7 +265,7 @@ Beberapa parameter yang perlu diketahui :
 | `[!] -s, --source address`            | mendefinisikan opsi alamat asal dari paket
 | `[!] -d, --destination address`       | mendefinisikan opsi alamat tujuan dari paket
 | `-m, --match matchname`                 | mendefinisikan kesesuaian rule untuk tujuannya ke mana
-| `-j, --jump targetname`                 | mendefinisikan rule akan menggunakan taeget yang mana
+| `-j, --jump targetname`                 | mendefinisikan rule akan menggunakan target yang mana
 | `[!] -i, --in-interface name`       | mendefinisikan opsi interface yang dilihat masuk paketnya
 | `[!] -o, --out-interface name`      | mendefinisikan opsi interface yang dilihat keluar paketnya
 
